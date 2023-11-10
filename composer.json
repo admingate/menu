@@ -1,0 +1,24 @@
+{
+    "name": "admingate/menu",
+    "description": "Menu package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Admingate\\Menu\\": "src"
+        }
+    },
+    "require": {
+        "admingate/admingate": "*@dev",
+        "admingate/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admingate\\Menu\\Providers\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Admingate\\Menu\\Facades\\MenuFacade"
+            }
+        }
+    }
+}
